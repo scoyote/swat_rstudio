@@ -1,0 +1,5 @@
+FROM r_swat:v2 
+MAINTAINER scoyote 
+COPY start.sh /start.sh
+ENTRYPOINT "/start.sh"
+

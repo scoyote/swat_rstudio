@@ -1,0 +1,25 @@
+FROM centos:6 
+MAINTAINER scoyote 
+
+FROM centos:6
+MAINTAINER scoyote
+
+# Install libraries and clean all
+RUN yum update -y \
+  && yum -y install numactl-libs.x86_64 \
+   numactl \
+   passwd \
+   libXp \
+   libpng12 \
+   libXmu.x86_64 \
+   xterm \
+   xorg-x11-apps \
+   xorg-x11-server-utils \
+   xorg-x11-server-Xorg \
+   xorg-x11-xauth \
+   git \
+   wget \
+   openssl-devel \
+   libcurl-devel \
+   perl \
+  && useradd -m -u 1047 -p ".rxNXSdtFiEDM" sasdemo 
