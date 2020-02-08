@@ -22,7 +22,7 @@ RUN yum update -y \
   && yum groupinstall "Development tools" -y \
   && yum -y install R \
   && yum clean all \
-  && useradd -m -u 1047 -p ".rxNXSdtFiEDM" sasdemo \
+  && useradd -m -u 1047 -p ".a/xezhRLXhMk%" sasdemo \
   && R -e "install.packages(c('jsonlite','dplyr','httr'), dependencies=T, repos='https://cran.rstudio.com/')" \
   && wget https://github.com/sassoftware/R-swat/releases/download/v1.4.1/R-swat-1.4.1-linux64.tar.gz \
   && wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5033-x86_64.rpm \
